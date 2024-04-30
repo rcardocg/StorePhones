@@ -1,6 +1,7 @@
 # Store Phones
 Pablo Siquinajay – 22006477 Seccion A
 Ricardo Caballeros - 19001133
+
 Para la siguiente documentación se describira los 3 módulos importantes que acompañan a
 nuestro proyecto.
 Se utilizo la biblioteca de componentes de interfaz de usuario para react Material UI.
