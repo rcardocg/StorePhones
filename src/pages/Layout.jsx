@@ -8,7 +8,7 @@ const Layout = () => {
         <React.Fragment>
           <Link to="/">Inicio</Link>
 
-          <Link to="/tiendita"> Tienda </Link>
+          <Link to="/tiendita" variant="body2"> Tienda </Link>
 
           <Link to="/reviews"> Reseñas </Link>
 

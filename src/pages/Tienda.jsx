@@ -34,36 +34,36 @@ function Boton() {
   return <button onClick={handleClick}>Agregar al carrito</button>;
 }
 function Table() {
-  return (
-    <>
-      <div>
-        <img
-          src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/wm/2023/09/apple-iphone-15-6.jpg"
-          width="50"
-          height="50"
-        />
-        <p>Descripcion breve</p>
-        <Boton />
-      </div>
-      <div>
-        <img
-          src="https://www.techyloud.com/wp-content/uploads/2021/03/Galaxy-S23-Ultra.jpg"
-          width="50"
-          height="50"
-        />
-        <p>Descripción breve</p>
-        <Boton />
-      </div>
-      <div>
-        <img
-          src="https://www.91-cdn.com/hub/wp-content/uploads/2023/08/xiaomi-13t-image.jpg?tr=q-100"
-          width="50"
-          height="50"
-        />
-        <p>Descripción breve</p>
-        <Boton />
-      </div>
-    </>
+    return (
+      <>
+        <div>
+          <img
+            src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/wm/2023/09/apple-iphone-15-6.jpg"
+            width="50"
+            height="50"
+          />
+          <p>Descripcion breve</p>
+          <Boton />
+        </div>
+        <div>
+          <img
+            src="https://www.techyloud.com/wp-content/uploads/2021/03/Galaxy-S23-Ultra.jpg"
+            width="50"
+            height="50"
+          />
+          <p>Descripción breve</p>
+          <Boton />
+        </div>
+        <div>
+          <img
+            src="https://www.91-cdn.com/hub/wp-content/uploads/2023/08/xiaomi-13t-image.jpg?tr=q-100"
+            width="50"
+            height="50"
+          />
+          <p>Descripción breve</p>
+          <Boton />
+        </div>
+      </>
   );
 }
 export default function App() {

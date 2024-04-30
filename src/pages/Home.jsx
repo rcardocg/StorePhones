@@ -70,7 +70,8 @@ function TablaProductos() {
               Apple
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Innov
+              Innovación, elegancia y rendimiento líder en la industria de la
+              tecnología
             </Typography>
           </CardContent>
           <CardActions>
