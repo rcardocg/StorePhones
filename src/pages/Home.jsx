@@ -37,7 +37,7 @@ function Encabezado() {
               <Card>
                 <CardMedia sx={{ height: 70 }} />
                 <CardContent>
-                  <Typography gutterBottom variant="h1" component="div">
+                  <Typography gutterBottom variant="h4" component="div">
                     Store Phones
                   </Typography>
                   <Typography variant="body1">
@@ -70,7 +70,8 @@ function TablaProductos() {
               Apple
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Innov
+              Innovación, elegancia y rendimiento líder en la industria de la
+              tecnología
             </Typography>
           </CardContent>
           <CardActions>
@@ -127,17 +128,35 @@ function TablaProductos() {
 }
 
 function Contacto() {
+  const cardStyle = {
+    backgroundColor: '#333',
+    color: 'white',
+    textAlign: 'left',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  };
+
+  const rightAlignStyle = {
+    textAlign: 'right', // Alinea el texto a la derecha
+  };
+
   return (
     <>
+      <br></br>
       <React.Fragment>
-        <Card>
+        <Card style={cardStyle}>
           <CardMedia sx={{ height: 20 }} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h6" component="div">
               Informacion de contacto
             </Typography>
-            <Typography variant="body2">Ricardo Caballeros 19001133</Typography>
-            <Typography variant="body2">Pablo Siquinajay 22006477</Typography>
+            <Typography variant="body2">Ricardo 19001133</Typography>
+            <Typography variant="body2">
+              Pablo Siquinajay 22006477 Siquinajay
+            </Typography>
+            <Typography variant="body2" sx={rightAlignStyle}>
+              Universidad Galileo
+            </Typography>
           </CardContent>
         </Card>
       </React.Fragment>
