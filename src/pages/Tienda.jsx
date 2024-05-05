@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
+
 function Todo() {
   return (
     <div>
@@ -17,25 +18,29 @@ function Todo() {
 }
 
 function TablaProductos() {
+    const handleAddToCart = () => {
+      alert('Producto agregado al carrito');
+    };
+    
   return (
     <>
      <React.Fragment>
-        <Card sx={{ maxWidth: 900 }}>
-          <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="body2" color="text.secondary">
-              Innovación, elegancia y rendimiento líder en la industria de la tecnología
-            </Typography>
-            <CardMedia
-              component="img"
-              sx={{ width: '20%', height: '20%', float: 'center' }}
-              image="src/pages/img/iphone_15.jpg"
-              title="Apple"
-            />
-          </CardContent>
-          <CardActions>
-            <Button size="small">Agregar al carrito</Button>
-          </CardActions>
-        </Card>
+     <Card sx={{ maxWidth: 900 }}>
+        <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
+          <Typography variant="h1" color="text.secondary">
+            Iphone 15
+          </Typography>
+          <CardMedia
+            component="img"
+            sx={{ width: '20%', height: '20%', float: 'center' }}
+            image="src/pages/img/iphone_15.jpg"
+            title="Apple"
+          />
+        </CardContent>
+        <CardActions>
+          <Button size="small" onClick={handleAddToCart}>Agregar al carrito</Button>
+        </CardActions>
+      </Card>
       </React.Fragment>
    
     
@@ -43,8 +48,8 @@ function TablaProductos() {
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="body2" color="text.secondary">
-              Innovación, elegancia y rendimiento líder en la industria de la tecnología
+            <Typography variant="h1" color="text.secondary">
+              Iphone SE
             </Typography>
             <CardMedia
               component="img"
@@ -54,7 +59,7 @@ function TablaProductos() {
             />
           </CardContent>
           <CardActions>
-            <Button size="small">Agregar al carrito</Button>
+            <Button size="small" onClick={handleAddToCart}>Agregar al carrito</Button>
           </CardActions>
         </Card>
       </React.Fragment>
@@ -63,8 +68,8 @@ function TablaProductos() {
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="body2" color="text.secondary">
-              Innovación, elegancia y rendimiento líder en la industria de la tecnología
+            <Typography variant="h1" color="text.secondary">
+              Iphone 12
             </Typography>
             <CardMedia
               component="img"
@@ -74,7 +79,7 @@ function TablaProductos() {
             />
           </CardContent>
           <CardActions>
-            <Button size="small">Agregar al carrito</Button>
+            <Button size="small" onClick={handleAddToCart} >Agregar al carrito</Button>
           </CardActions>
         </Card>
       </React.Fragment>
