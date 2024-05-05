@@ -1,12 +1,91 @@
 import React from 'react';
-import { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+
+function Todo() {
+  return (
+    <div>
+      <br></br>
+      <TablaProductos />
+      <Contacto />
+    </div>
+  );
+}
+
+function TablaProductos() {
+  return (
+    <>
+     <React.Fragment>
+        <Card sx={{ maxWidth: 900 }}>
+          <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
+            <Typography variant="body2" color="text.secondary">
+              Innovación, elegancia y rendimiento líder en la industria de la tecnología
+            </Typography>
+            <CardMedia
+              component="img"
+              sx={{ width: '20%', height: '20%', float: 'center' }}
+              image="src/pages/img/iphone.png"
+              title="Apple"
+            />
+          </CardContent>
+          <CardActions>
+            <Button size="small">Agregar al carrito</Button>
+          </CardActions>
+        </Card>
+      </React.Fragment>
+   
+    
+      <br></br>
+      <React.Fragment>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia
+            sx={{ height: 140 }}
+            image="src/pages/img/samsung.png"
+            title="Samsung"
+          />
+          <CardContent>
+            <Typography variant="h3" component="div">
+              Samsung
+            </Typography>
+            <Typography gutterBotton variant="body2" color="text.secondary">
+              Tecnología versátil, diseño moderno y una amplia gama de opciones
+              para cada estilo de vida
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Ver más</Button>
+          </CardActions>
+        </Card>
+      </React.Fragment>
+      <br></br>
+      <React.Fragment>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia
+            sx={{ height: 140 }}
+            image="src/pages/img/xiaomi.png"
+            title="Xiaomi"
+          />
+          <CardContent>
+            <Typography variant="h3" component="div">
+              Xiaomi
+            </Typography>
+            <Typography gutterBotton variant="body2" color="text.secondary">
+              Excelente relación calidad-precio, innovación disruptiva y un
+              enfoque centrado en la comunidad.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Ver más</Button>
+          </CardActions>
+        </Card>
+      </React.Fragment>
+    </>
+  );
+}
 
 function Contacto() {
   return (
@@ -26,51 +105,6 @@ function Contacto() {
     </>
   );
 }
-
-function Boton() {
-  function handleClick() {
-    alert('Este producto se ha agregado al carrito');
-  }
-  return <button onClick={handleClick}>Agregar al carrito</button>;
-}
-function Table() {
-    return (
-      <>
-        <div>
-          <img
-            src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/wm/2023/09/apple-iphone-15-6.jpg"
-            width="50"
-            height="50"
-          />
-          <p>Descripcion breve</p>
-          <Boton />
-        </div>
-        <div>
-          <img
-            src="https://www.techyloud.com/wp-content/uploads/2021/03/Galaxy-S23-Ultra.jpg"
-            width="50"
-            height="50"
-          />
-          <p>Descripción breve</p>
-          <Boton />
-        </div>
-        <div>
-          <img
-            src="https://www.91-cdn.com/hub/wp-content/uploads/2023/08/xiaomi-13t-image.jpg?tr=q-100"
-            width="50"
-            height="50"
-          />
-          <p>Descripción breve</p>
-          <Boton />
-        </div>
-      </>
-  );
-}
 export default function App() {
-  return (
-    <>
-      <Table />
-      <Contacto />
-    </>
-  );
+  return <Todo />;
 }
