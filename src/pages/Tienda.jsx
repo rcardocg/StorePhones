@@ -28,7 +28,7 @@ function TablaProductos() {
             <CardMedia
               component="img"
               sx={{ width: '20%', height: '20%', float: 'center' }}
-              image="src/pages/img/iphone.png"
+              image="src/pages/img/iphone_15.jpg"
               title="Apple"
             />
           </CardContent>
@@ -41,48 +41,44 @@ function TablaProductos() {
     
       <br></br>
       <React.Fragment>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="src/pages/img/samsung.png"
-            title="Samsung"
-          />
-          <CardContent>
-            <Typography variant="h3" component="div">
-              Samsung
+        <Card sx={{ maxWidth: 900 }}>
+          <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
+            <Typography variant="body2" color="text.secondary">
+              Innovación, elegancia y rendimiento líder en la industria de la tecnología
             </Typography>
-            <Typography gutterBotton variant="body2" color="text.secondary">
-              Tecnología versátil, diseño moderno y una amplia gama de opciones
-              para cada estilo de vida
-            </Typography>
+            <CardMedia
+              component="img"
+              sx={{ width: '20%', height: '20%', float: 'center' }}
+              image="src/pages/img/iphone_SE.jpg"
+              title="Apple"
+            />
           </CardContent>
           <CardActions>
-            <Button size="small">Ver más</Button>
+            <Button size="small">Agregar al carrito</Button>
           </CardActions>
         </Card>
       </React.Fragment>
+   
       <br></br>
       <React.Fragment>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="src/pages/img/xiaomi.png"
-            title="Xiaomi"
-          />
-          <CardContent>
-            <Typography variant="h3" component="div">
-              Xiaomi
+        <Card sx={{ maxWidth: 900 }}>
+          <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
+            <Typography variant="body2" color="text.secondary">
+              Innovación, elegancia y rendimiento líder en la industria de la tecnología
             </Typography>
-            <Typography gutterBotton variant="body2" color="text.secondary">
-              Excelente relación calidad-precio, innovación disruptiva y un
-              enfoque centrado en la comunidad.
-            </Typography>
+            <CardMedia
+              component="img"
+              sx={{ width: '20%', height: '20%', float: 'center' }}
+              image="src/pages/img/iphone_12.jpg"
+              title="Apple"
+            />
           </CardContent>
           <CardActions>
-            <Button size="small">Ver más</Button>
+            <Button size="small">Agregar al carrito</Button>
           </CardActions>
         </Card>
       </React.Fragment>
+   
     </>
   );
 }
