@@ -24,10 +24,23 @@ function TablaProductos() {
     
   return (
     <>
+    <Card>
+      <CardMedia sx={{ height: 70 }} />
+      <CardContent>
+        <Typography gutterBottom variant="h1" component="div">
+          Tiendita
+        </Typography>
+        <Typography variant="body1">
+          Aqui podras encontrar nuestra selección de productos que ofrecemos
+        </Typography>
+      </CardContent>
+    </Card>
+    <br></br>
+    <br></br>
      <React.Fragment>
      <Card sx={{ maxWidth: 900 }}>
         <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-          <Typography variant="h1" color="text.secondary">
+          <Typography variant="h2" color="text.secondary">
             Iphone 15
           </Typography>
           <CardMedia
@@ -48,7 +61,7 @@ function TablaProductos() {
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="h1" color="text.secondary">
+            <Typography variant="h2" color="text.secondary">
               Iphone SE
             </Typography>
             <CardMedia
@@ -68,7 +81,7 @@ function TablaProductos() {
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="h1" color="text.secondary">
+            <Typography variant="h2" color="text.secondary">
               Iphone 12
             </Typography>
             <CardMedia
