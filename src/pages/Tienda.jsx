@@ -5,12 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import Box from '@mui/material/Box';
 
 function Todo() {
   return (
     <div>
-      <br></br>
+      <br />
       <TablaProductos />
       <Contacto />
     </div>
@@ -18,72 +18,122 @@ function Todo() {
 }
 
 function TablaProductos() {
-    const handleAddToCart = () => {
-      alert('Producto agregado al carrito');
-    };
-    
+  const handleAddToCart = () => {
+    alert('Producto agregado al carrito');
+  };
+
   return (
     <>
-     <React.Fragment>
-     <Card sx={{ maxWidth: 900 }}>
-        <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-          <Typography variant="h1" color="text.secondary">
-            Iphone 15
-          </Typography>
-          <CardMedia
-            component="img"
-            sx={{ width: '20%', height: '20%', float: 'center' }}
-            image="src/pages/img/iphone_15.jpg"
-            title="Apple"
-          />
-        </CardContent>
-        <CardActions>
-          <Button size="small" onClick={handleAddToCart}>Agregar al carrito</Button>
-        </CardActions>
-      </Card>
-      </React.Fragment>
-   
-    
-      <br></br>
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
-          <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="h1" color="text.secondary">
-              Iphone SE
-            </Typography>
+          <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <CardMedia
               component="img"
-              sx={{ width: '20%', height: '20%', float: 'center' }}
+              sx={{ width: '20%', height: '20%', marginRight: '20px' }}
+              image="src/pages/img/iphone_15.jpg"
+              title="Iphone15"
+            />
+            <div>
+            <Box sx={{ width: '60%', height: '10%', background: '#F57A4D' }}>
+              <Typography variant="h6" component="div">
+                iphone 15 Pro Max
+              </Typography>
+            </Box>
+              <Box component="div">
+              <Typography variant="body2" color="text.secondary"  sx={{width: 500,textAlign: 'justify', paddingRight: 5 ,paddingTop: 2}}>
+                orem Ipsum is simply dummy text of the printing and typesetting industry. 
+                
+                </Typography> 
+              </Box> 
+
+              <div style={{  mx: 'auto', width: 202 , paddingTop: 50, paddingLeft: 30}}>
+                <CardActions>
+                  <Button size="small" onClick={handleAddToCart} variant="contained" >Agregar al carrito</Button>
+                </CardActions>
+              </div>     
+            </div>
+            </CardContent>
+        </Card>
+      </React.Fragment>
+
+      <br />
+      <React.Fragment>
+        <Card sx={{ maxWidth: 900 }}>
+          <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+          <CardMedia
+              component="img"
+              sx={{ width: '20%', height: '20%', float: 'left' }}
               image="src/pages/img/iphone_SE.jpg"
               title="Apple"
             />
+              <div>
+              <Box sx={{ width: '60%', height: '10%', background: '#F57A4D' }}>
+               <Typography variant="h6" component="div"  sx={{ marginBottom: 2}} >
+               iPhone SE 2
+              </Typography>
+              </Box>
+              <Box component="div">
+             
+                <Typography variant="body2" color="text.secondary"  sx={{width: 500,textAlign: 'justify', paddingRight: 5 }}>
+                orem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type sp
+                ecimen book. It has survived not only five centuries, but also the leap into elec
+                tronic typesetting, remaining essentially unchanged. It was popularised in the 1960
+                s with the release of Letraset sheets containing Lorem Ipsum passages, and more recent
+                ly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </Typography>   
+                </Box> 
+                <div style={{  mx: 'auto', width: 202 , paddingTop: 50, paddingLeft: 30}}>
+                <CardActions>
+                  <Button size="small" onClick={handleAddToCart} variant="contained">Agregar al carrito</Button>
+                </CardActions>
+              </div>      
+            </div>
           </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handleAddToCart}>Agregar al carrito</Button>
-          </CardActions>
+          
         </Card>
       </React.Fragment>
-   
-      <br></br>
+
+      <br />
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
-          <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="h1" color="text.secondary">
-              Iphone 12
-            </Typography>
+          <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <CardMedia
-              component="img"
-              sx={{ width: '20%', height: '20%', float: 'center' }}
-              image="src/pages/img/iphone_12.jpg"
-              title="Apple"
-            />
+                component="img"
+                sx={{ width: '20%', height: '20%', float: 'center' }}
+                image="src/pages/img/iphone_12.jpg"
+                title="Apple"
+              />
+           <div>
+           <Box sx={{ width: '60%', height: '10%', background: '#F57A4D' }}>
+              <Typography variant="h6" component="div"  sx={{ marginBottom: 2}} >
+                 iPhone 12 Pro Max
+              </Typography>
+          </Box>
+              <Box component="div">
+                <Typography variant="body2" color="text.secondary"  sx={{width: 500,textAlign: 'justify', paddingRight: 5 }}>
+                orem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type sp
+                ecimen book. It has survived not only five centuries, but also the leap into elec
+                tronic typesetting, remaining essentially unchanged. It was popularised in the 1960
+                s with the release of Letraset sheets containing Lorem Ipsum passages, and more recent
+                ly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </Typography>   
+                </Box> 
+               <div style={{  mx: 'auto', width: 202 , paddingTop: 50, paddingLeft: 30}}>
+                <CardActions>
+                  <Button size="small" onClick={handleAddToCart} variant="contained">Agregar al carrito</Button>
+                </CardActions>
+              </div>      
+            </div>
+           
+          
           </CardContent>
-          <CardActions>
-            <Button size="small" onClick={handleAddToCart} >Agregar al carrito</Button>
-          </CardActions>
+          
         </Card>
       </React.Fragment>
-   
     </>
   );
 }
@@ -91,6 +141,7 @@ function TablaProductos() {
 function Contacto() {
   return (
     <>
+      <br />
       <React.Fragment>
         <Card>
           <CardMedia sx={{ height: 20 }} />
@@ -106,6 +157,7 @@ function Contacto() {
     </>
   );
 }
+
 export default function App() {
   return <Todo />;
 }
