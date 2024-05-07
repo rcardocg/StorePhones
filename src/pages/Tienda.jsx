@@ -25,6 +25,19 @@ function TablaProductos() {
   return (
     <>
       <React.Fragment>
+      <Card>
+      <CardMedia sx={{ height: 70 }} />
+      <CardContent>
+        <Typography gutterBottom variant="h1" component="div">
+          Tiendita
+        </Typography>
+        <Typography variant="body1">
+          Aqui podras encontrar nuestra selección de productos que ofrecemos
+        </Typography>
+      </CardContent>
+    </Card>
+    <br></br>
+    <br></br>
         <Card sx={{ maxWidth: 900 }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
             <CardMedia
