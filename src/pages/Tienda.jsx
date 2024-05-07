@@ -40,18 +40,18 @@ function TablaProductos() {
      <React.Fragment>
      <Card sx={{ maxWidth: 900 }}>
         <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-          <Typography variant="h2" color="text.secondary">
+        <Typography variant="h2" color="text.secondary" sx={{mr:25, mt:10}}>
             Iphone 15
           </Typography>
           <CardMedia
             component="img"
-            sx={{ width: '20%', height: '20%', float: 'center' }}
+            sx={{ width: '20%', height: '20%', float: 'center', mr:15}}
             image="src/pages/img/iphone_15.jpg"
             title="Apple"
           />
         </CardContent>
         <CardActions>
-          <Button size="small" onClick={handleAddToCart}>Agregar al carrito</Button>
+          <Button size="small" onClick={handleAddToCart} sx={{ml:60}}>Agregar al carrito</Button>
         </CardActions>
       </Card>
       </React.Fragment>
@@ -61,18 +61,19 @@ function TablaProductos() {
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="h2" color="text.secondary">
+          <Typography variant="h2" color="text.secondary" sx={{mr:25, mt:10}}>
               Iphone SE
             </Typography>
             <CardMedia
               component="img"
-              sx={{ width: '20%', height: '20%', float: 'center' }}
+              sx={{ width: '20%', height: '20%', float: 'center', mr:15 }}
               image="src/pages/img/iphone_SE.jpg"
               title="Apple"
             />
+          
           </CardContent>
           <CardActions>
-            <Button size="small" onClick={handleAddToCart}>Agregar al carrito</Button>
+            <Button size="small" onClick={handleAddToCart} sx={{ml:60}}>Agregar al carrito</Button>
           </CardActions>
         </Card>
       </React.Fragment>
@@ -81,18 +82,18 @@ function TablaProductos() {
       <React.Fragment>
         <Card sx={{ maxWidth: 900 }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'row-reverse', alignItems: 'left' }}>
-            <Typography variant="h2" color="text.secondary">
+            <Typography variant="h2" color="text.secondary" sx={{mr:25, mt:10}}>
               Iphone 12
             </Typography>
             <CardMedia
               component="img"
-              sx={{ width: '20%', height: '20%', float: 'center' }}
+              sx={{ width: '20%', height: '20%', float: 'center', mr:15 }}
               image="src/pages/img/iphone_12.jpg"
               title="Apple"
             />
           </CardContent>
           <CardActions>
-            <Button size="small" onClick={handleAddToCart} >Agregar al carrito</Button>
+            <Button size="small" onClick={handleAddToCart} sx={{ml:60, }} >Agregar al carrito</Button>
           </CardActions>
         </Card>
       </React.Fragment>
@@ -122,3 +123,4 @@ function Contacto() {
 export default function App() {
   return <Todo />;
 }
+
